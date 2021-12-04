@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Online translator">
+  <meta property="og:description" content="Fast, convenient and free translator!">
+  <meta property="og:image" content="./assets/imgs/logo.png">
+  <link rel="icon" type="image/png" href="./assets/imgs/logo.png" />
+  <title>ENG-UZB translator</title>
+  <link rel="stylesheet" href="{% static '/semantic-ui/semantic.min.css' %}">
+</head>
+
+<body>
+
+  <div class="ui header segment">
+    <div class="ui container">
+      <h1 class="ui header">Online Lug'at</h1>
+      <p>Tezlik, qulaylik va bepul tarjimon!</p>
+    </div>
+    <div class="ui divider"></div>
+  </div>
+
+  <div class="ui container">
+
+    <div class="ui placeholder segment">
+      <div class="ui icon header">
+        Ingilizcha-o'zbekcha va O'zbekcha-inglizcha
+      </div>
+      <div class="inline" style="width:90%;">
+        <div class="ui massive form search">
+          <div class="ui icon input" style="width: 100%;">
+            <input type="text" class="prompt" placeholder="So'z kiriting...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui piled segment">
+      <h4 class="ui header">Natija:</h4>
+      <table class="ui celled large olive table">
+        <thead>
+          <tr>
+            <th><i class="united kingdom flag"></i>Ingilizcha</th>
+            <th><i class="uzbekistan flag"></i>O'zbekcha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="eng">Programmer</td>
+            <td data-label="uzb">Dasturchi</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
