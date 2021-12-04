@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salom sahifa</title>
+</head>
+
+<body>
+  <h1>Salom - {{ism}}</h1>
+  {% if ism == 'ilosrim' %}
+  <h2>Sahifaga hush kelibsiz Admin</h2>
+  {% else %}
+  <h2>Sahifaga hush kelibsiz mehmon</h2>
+  {% endif %}
+</body>
+
+</html>
