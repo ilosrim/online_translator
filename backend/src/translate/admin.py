@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import Dictionaries
 
-# Register your models here.
+class DictAdmin(admin.ModelAdmin):
+
+  list_display = ['inglizcha', 'uzbekcha']
+
+admin.site.register(Dictionaries, DictAdmin)
