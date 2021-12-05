@@ -5,7 +5,7 @@ from .models import Dictionaries
 def index(request):
   word = request.GET.get('q', '')
   if word and word!= '':
-    result = Dictionaries.objects.filter(inglizcha=word).all()
+    result = Dictionaries.objects.filter(inglizcha__contains=word).all()[:3]
   else:
     result = None
   
